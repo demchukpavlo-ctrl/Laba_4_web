@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТехноДім — Каталог товарів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>ТехноДім</h1>
+    <p>Інтернет-магазин побутової техніки та електроніки</p>
+    <nav>
+        <a href="#catalog">Каталог</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#schedule">Графік роботи</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ===== Таблиця 1: структура згідно з варіантом №4 ===== -->
+    <section id="catalog">
+        <h2>Каталог товарів</h2>
+
+        <table class="catalog" dir="ltr" bgcolor="#ffffff" frame="box"
+               summary="Каталог товарів магазину ТехноДім: категорія, назва, виробник, роздрібна та оптова ціна, примітка">
+            <caption id="catalog-caption" title="Актуальні ціни станом на листопад 2026 року">
+                Таблиця 1. Каталог товарів магазину «ТехноДім»
+            </caption>
+
+            <colgroup class="col-category" lang="uk">
+                <col>
+            </colgroup>
+            <colgroup class="col-product" lang="uk" span="2"></colgroup>
+            <colgroup class="col-price" lang="uk" span="2"></colgroup>
+            <colgroup class="col-note" lang="uk">
+                <col>
+            </colgroup>
+
+            <thead>
+                <tr class="head-row" charoff="0" style="height: 36px;" title="Заголовок таблиці">
+                    <th id="h-cat" rowspan="3" scope="col" dir="ltr" bgcolor="#1f4e79" headers="">Категорія</th>
+                    <th id="h-prod" colspan="4" scope="colgroup" dir="ltr" bgcolor="#1f4e79">Інформація про товар</th>
+                    <th id="h-note" rowspan="3" scope="col" dir="ltr" bgcolor="#1f4e79">Примітка</th>
+                </tr>
+                <tr class="head-row" charoff="0" style="height: 32px;" title="Підзаголовок таблиці">
+                    <th id="h-name" rowspan="2" scope="col" dir="ltr" bgcolor="#2e75b6" headers="h-prod">Назва товару</th>
+                    <th id="h-brand" rowspan="2" scope="col" dir="ltr" bgcolor="#2e75b6" headers="h-prod">Виробник</th>
+                    <th id="h-price" colspan="2" scope="colgroup" dir="ltr" bgcolor="#2e75b6" headers="h-prod">Ціна, грн</th>
+                </tr>
+                <tr class="head-row" charoff="0" style="height: 28px;" title="Види цін">
+                    <th id="h-retail" scope="col" dir="ltr" bgcolor="#5b9bd5" headers="h-prod h-price">Роздрібна</th>
+                    <th id="h-wholesale" scope="col" dir="ltr" bgcolor="#5b9bd5" headers="h-prod h-price">Оптова</th>
+                </tr>
+            </thead>
+
+            <tfoot id="catalog-footer" style="font-weight: bold;" dir="ltr" align="center" valign="middle">
+                <tr class="total-row" charoff="0" style="background: #fff2cc;" title="Підсумок по каталогу">
+                    <th scope="row" dir="ltr" bgcolor="#ffe699" headers="h-cat">Разом</th>
+                    <td colspan="1" style="text-align: left;" title="Кількість позицій" lang="uk">9 позицій</td>
+                    <td colspan="1" title="Кількість виробників" lang="uk">8 виробників</td>
+                    <td colspan="1" title="Сума роздрібних цін" lang="uk">158 491</td>
+                    <td colspan="1" title="Сума оптових цін" lang="uk">147 250</td>
+                    <td colspan="1" title="Середня знижка" lang="uk">≈ 7 %</td>
+                </tr>
+            </tfoot>
+
+            <!-- Група 1 -->
+            <tbody class="group">
+                <tr class="odd" charoff="0" style="" title="Холодильник Samsung">
+                    <th id="c-1" rowspan="3" scope="rowgroup" dir="ltr" bgcolor="#deebf7" headers="h-cat">Велика побутова техніка</th>
+                    <td colspan="1" style="text-align: left;" title="Двокамерний, No Frost" lang="uk">Холодильник RB34T600</td>
+                    <td colspan="1" title="Південна Корея" lang="en">Samsung</td>
+                    <td colspan="1" class="num" title="Роздрібна ціна" lang="uk">24 999</td>
+                    <td colspan="1" class="num" title="Оптова ціна" lang="uk">23 200</td>
+                    <td colspan="1" style="color: #c00000;" title="Новинка" lang="uk">Новинка</td>
+                </tr>
+                <tr class="even" charoff="0" style="" title="Пральна машина Bosch">
+                    <td colspan="1" style="text-align: left;" title="Завантаження 8 кг" lang="uk">Пральна машина WAN28263</td>
+                    <td colspan="1" title="Німеччина" lang="de">Bosch</td>
+                    <td colspan="1" class="num" title="Роздрібна ціна" lang="uk">18 499</td>
+                    <td colspan="1" class="num" title="Оптова ціна" lang="uk">17 100</td>
+                    <td rowspan="2" colspan="1" style="color: #548235;" title="Діє акція" lang="uk">Знижка 10&nbsp;% до кінця місяця</td>
+                </tr>
+                <tr class="odd" charoff="0" style="" title="Посудомийна машина Electrolux">
+                    <td colspan="1" style="text-align: left;" title="13 комплектів посуду" lang="uk">Посудомийна машина EEA717110L</td>
+                    <td colspan="1" title="Швеція" lang="sv">Electrolux</td>
+                    <td colspan="1" class="num" title="Роздрібна ціна" lang="uk">16 299</td>
+                    <td colspan="1" class="num" title="Оптова ціна" lang="uk">15 050</td>
+                </tr>
+            </tbody>
+
+            <!-- Група 2 -->
+            <tbody class="group">
+                <tr class="odd" charoff="0" style="" title="Мікрохвильова піч LG">
+                    <th id="c-2" rowspan="3" scope="rowgroup" dir="ltr" bgcolor="#deebf7" headers="h-cat">Дрібна побутова техніка</th>
+                    <td colspan="1" style="text-align: left;" title="Об'єм 23 л" lang="uk">Мікрохвильова піч MS2336GIB</td>
+                    <td colspan="1" title="Південна Корея" lang="en">LG</td>
+                    <td colspan="1" class="num" title="Роздрібна ціна" lang="uk">4 299</td>
+                    <td colspan="1" class="num" title="Оптова ціна" lang="uk">3 950</td>
+                    <td colspan="1" style="color: #c00000;" title="Хіт продажів" lang="uk">Хіт продажів</td>
+                </tr>
+                <tr class="even" charoff="0" style="" title="Пилосос Philips">
+                    <td colspan="1" style="text-align: left;" title="Бездротовий" lang="uk">Пилосос XC3131/01</td>
+                    <td colspan="1" title="Нідерланди" lang="nl">Philips</td>
+                    <td colspan="1" class="num" title="Роздрібна ціна" lang="uk">7 999</td>
+                    <td colspan="1" class="num" title="Оптова ціна" lang="uk">7 400</td>
+                    <td rowspan="2" colspan="1" style="color: #548235;" title="Подарунок" lang="uk">Подарунок при покупці від 5000&nbsp;грн</td>
+                </tr>
+                <tr class="odd" charoff="0" style="" title="Електрочайник Tefal">
+                    <td colspan="1" style="text-align: left;" title="Об'єм 1,7 л" lang="uk">Електрочайник KO851830</td>
+                    <td colspan="1" title="Франція" lang="fr">Tefal</td>
+                    <td colspan="1" class="num" title="Роздрібна ціна" lang="uk">1 899</td>
+                    <td colspan="1" class="num" title="Оптова ціна" lang="uk">1 700</td>
+                </tr>
+            </tbody>
+
+            <!-- Група 3 -->
+            <tbody class="group">
+                <tr class="odd" charoff="0" style="" title="Телевізор Samsung">
+                    <th id="c-3" rowspan="3" scope="rowgroup" dir="ltr" bgcolor="#deebf7" headers="h-cat">Електроніка</th>
+                    <td colspan="1" style="text-align: left;" title="Діагональ 55 дюймів, 4K" lang="uk">Телевізор UE55CU7100</td>
+                    <td colspan="1" title="Південна Корея" lang="en">Samsung</td>
+                    <td colspan="1" class="num" title="Роздрібна ціна" lang="uk">21 999</td>
+                    <td colspan="1" class="num" title="Оптова ціна" lang="uk">20 500</td>
+                    <td colspan="1" style="color: #c00000;" title="Обмежена кількість" lang="uk">Залишилось 3&nbsp;шт.</td>
+                </tr>
+                <tr class="even" charoff="0" style="" title="Ноутбук Lenovo">
+                    <td colspan="1" style="text-align: left;" title="15,6 дюйма, 16 ГБ RAM" lang="uk">Ноутбук IdeaPad Slim 5</td>
+                    <td colspan="1" title="Китай" lang="en">Lenovo</td>
+                    <td colspan="1" class="num" title="Роздрібна ціна" lang="uk">32 999</td>
+                    <td colspan="1" class="num" title="Оптова ціна" lang="uk">30 900</td>
+                    <td rowspan="2" colspan="1" style="color: #548235;" title="Розстрочка" lang="uk">Розстрочка 0&nbsp;% на 10 місяців</td>
+                </tr>
+                <tr class="odd" charoff="0" style="" title="Смартфон Xiaomi">
+                    <td colspan="1" style="text-align: left;" title="8/256 ГБ" lang="uk">Смартфон Redmi Note 14 Pro</td>
+                    <td colspan="1" title="Китай" lang="en">Xiaomi</td>
+                    <td colspan="1" class="num" title="Роздрібна ціна" lang="uk">29 499</td>
+                    <td colspan="1" class="num" title="Оптова ціна" lang="uk">27 450</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ===== Таблиця 2: доставка (td colspan, caption-side: bottom) ===== -->
+    <section id="delivery">
+        <h2>Умови доставки</h2>
+
+        <table class="delivery" dir="ltr" bgcolor="#ffffff" frame="hsides"
+               summary="Способи доставки товарів, терміни та вартість">
+            <caption id="delivery-caption" title="Вартість вказана для замовлень по Україні">
+                Таблиця 2. Способи та вартість доставки
+            </caption>
+
+            <colgroup class="col-way" lang="uk"></colgroup>
+            <colgroup class="col-data" lang="uk" span="3"></colgroup>
+
+            <thead>
+                <tr class="head-row" charoff="0" style="" title="Заголовок">
+                    <th id="d-way" scope="col" dir="ltr" bgcolor="#548235">Спосіб доставки</th>
+                    <th id="d-time" scope="col" dir="ltr" bgcolor="#548235">Термін</th>
+                    <th id="d-small" scope="col" dir="ltr" bgcolor="#548235">Дрібна техніка</th>
+                    <th id="d-big" scope="col" dir="ltr" bgcolor="#548235">Велика техніка</th>
+                </tr>
+            </thead>
+
+            <tfoot id="delivery-footer" style="font-style: italic;" dir="ltr" align="left" valign="top">
+                <tr class="note-row" charoff="0" style="" title="Примітка">
+                    <td colspan="4" style="padding: 10px;" title="Безкоштовна доставка" lang="uk">
+                        * При замовленні на суму понад 10&nbsp;000&nbsp;грн доставка будь-яким способом — безкоштовна.
+                    </td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr class="odd" charoff="0" style="" title="Самовивіз">
+                    <th scope="row" dir="ltr" bgcolor="#e2efda" headers="d-way">Самовивіз з магазину</th>
+                    <td colspan="1" style="" title="Термін" lang="uk">у день замовлення</td>
+                    <td colspan="2" style="color: #548235; font-weight: bold;" title="Вартість" lang="uk">Безкоштовно</td>
+                </tr>
+                <tr class="even" charoff="0" style="" title="Нова пошта">
+                    <th scope="row" dir="ltr" bgcolor="#e2efda" headers="d-way">Нова пошта</th>
+                    <td colspan="1" style="" title="Термін" lang="uk">1–3 дні</td>
+                    <td colspan="1" style="" title="Вартість" lang="uk">від 70 грн</td>
+                    <td colspan="1" style="" title="Вартість" lang="uk">від 350 грн</td>
+                </tr>
+                <tr class="odd" charoff="0" style="" title="Кур'єр">
+                    <th scope="row" dir="ltr" bgcolor="#e2efda" headers="d-way">Кур'єр по місту</th>
+                    <td colspan="1" style="" title="Термін" lang="uk">1–2 дні</td>
+                    <td colspan="1" style="" title="Вартість" lang="uk">150 грн</td>
+                    <td colspan="1" style="" title="Вартість" lang="uk">400 грн (з підйомом)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ===== Таблиця 3: графік роботи, побудована на div через display: table ===== -->
+    <section id="schedule">
+        <h2>Графік роботи магазинів</h2>
+
+        <div class="css-table">
+            <div class="css-caption">Таблиця 3. Графік роботи (CSS display: table)</div>
+            <div class="css-head">
+                <div class="css-row">
+                    <div class="css-cell">Магазин</div>
+                    <div class="css-cell">Пн–Пт</div>
+                    <div class="css-cell">Сб</div>
+                    <div class="css-cell">Нд</div>
+                </div>
+            </div>
+            <div class="css-body">
+                <div class="css-row">
+                    <div class="css-cell">м. Київ, вул. Хрещатик, 10</div>
+                    <div class="css-cell">09:00–21:00</div>
+                    <div class="css-cell">10:00–20:00</div>
+                    <div class="css-cell">10:00–18:00</div>
+                </div>
+                <div class="css-row">
+                    <div class="css-cell">м. Львів, пр. Свободи, 25</div>
+                    <div class="css-cell">09:00–20:00</div>
+                    <div class="css-cell">10:00–19:00</div>
+                    <div class="css-cell"></div>
+                </div>
+                <div class="css-row">
+                    <div class="css-cell">м. Чернівці, вул. Головна, 5</div>
+                    <div class="css-cell">10:00–20:00</div>
+                    <div class="css-cell">10:00–18:00</div>
+                    <div class="css-cell"></div>
+                </div>
+            </div>
+            <div class="css-foot">
+                <div class="css-row">
+                    <div class="css-cell">Порожня клітинка — вихідний</div>
+                    <div class="css-cell"></div>
+                    <div class="css-cell"></div>
+                    <div class="css-cell"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 ТехноДім. Лабораторна робота №4, варіант 4.</p>
+</footer>
+
+</body>
+</html>
